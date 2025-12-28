@@ -11,8 +11,19 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
+~~~
+my_list = [10, 20, 30, 40, 50]
+try:
+    index = int(input("Enter the index to access (0 to 4): "))
+    print(f"Element at index {index}: {my_list[index]}")
+except IndexError:
+    print("⚠️ IndexError: That index is out of range.")
+except ValueError:
+    print("⚠️ ValueError: Please enter a valid integer.")
+~~~
 
 ## Output
+<img width="472" height="134" alt="image" src="https://github.com/user-attachments/assets/850c254e-e7f7-4421-8c5a-952a55212d27" />
 
 ## Result
+Thus , the program has been executed successfully.
